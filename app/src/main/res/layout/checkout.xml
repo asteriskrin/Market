@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_shopping_cart_24"
+        android:id="@+id/ivIcon"
+        android:contentDescription="@string/icon" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivIcon"
+        android:minHeight="48dp"
+        android:gravity="center_vertical"
+        android:id="@+id/tvNamaCustomer"
+        android:text="@string/nama_customer" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivIcon"
+        android:layout_toEndOf="@id/tvNamaCustomer"
+        android:minHeight="48dp"
+        android:id="@+id/etNamaCustomer"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:hint="@string/ketik_nama_customer"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvNamaCustomer"
+        android:minHeight="48dp"
+        android:gravity="center_vertical"
+        android:id="@+id/tvJumlahUang"
+        android:text="@string/jumlah_uang" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etNamaCustomer"
+        android:layout_toEndOf="@id/tvJumlahUang"
+        android:minHeight="48dp"
+        android:id="@+id/etJumlahUang"
+        android:inputType="numberDecimal"
+        android:importantForAutofill="no"
+        android:hint="@string/ketik_jumlah_uang" />
+</RelativeLayout>

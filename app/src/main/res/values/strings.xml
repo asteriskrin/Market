@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Market</string>
+    <string name="nama_barang">Nama Barang</string>
+    <string name="jumlah_barang">Jumlah Barang</string>
+    <string name="harga_barang">Harga Barang</string>
+    <string name="ketik_nama_barang">Ketik nama barang</string>
+    <string name="ketik_jumlah_barang">Ketik jumlah barang</string>
+    <string name="ketik_harga_barang">Ketik harga barang</string>
+    <string name="icon">Icon</string>
+    <string name="nama_customer">Nama Customer</string>
+    <string name="ketik_nama_customer">Ketik nama customer</string>
+    <string name="jumlah_uang">Jumlah Uang</string>
+    <string name="ketik_jumlah_uang">Ketik jumlah uang</string>
+    <string name="tambah_barang">Tambah Barang</string>
+    <string name="checkout">Checkout</string>
+    <string name="nama_customer_checkout">Nama Customer: -</string>
+    <string name="total_bayar_rp0_checkout">Total Bayar: Rp0</string>
+    <string name="jumlah_uang_rp0_checkout">Jumlah Uang: Rp0</string>
+    <string name="kembalian_rp0_checkout">Kembalian : Rp0</string>
+    <string name="bonus_checkout">Bonus : -</string>
+    <string name="ketarangan_checkout">Ketarangan : -</string>
+    <string name="hapus_barang">Hapus Barang</string>
+    <string name="prompt_hapus_barang">Apakah Anda yakin akan menghapus (nama barang) dari keranjang belanja?</string>
+    <string name="clear">Clear</string>
+</resources>

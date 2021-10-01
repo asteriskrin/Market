@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_add_24"
+        android:id="@+id/btnTambahBarang"
+        android:contentDescription="@string/tambah_barang" />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/btnTambahBarang"
+        android:src="@drawable/ic_baseline_delete_24"
+        android:id="@+id/btnHapusBarang"
+        android:contentDescription="@string/hapus_barang"/>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/btnHapusBarang"
+        android:src="@drawable/ic_baseline_clear_24"
+        android:id="@+id/btnClear"
+        android:contentDescription="@string/clear" />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnTambahBarang"
+        android:id="@+id/lvBarang" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnCheckout"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/tvNamaCustomer"
+        android:text="@string/nama_customer_checkout" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvNamaCustomer"
+        android:layout_alignParentEnd="true"
+        android:text="@string/total_bayar_rp0_checkout"
+        android:id="@+id/tvTotalBayar" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTotalBayar"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/tvJumlahUang"
+        android:text="@string/jumlah_uang_rp0_checkout" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvJumlahUang"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/tvKembalian"
+        android:text="@string/kembalian_rp0_checkout" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvKembalian"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/tvBonus"
+        android:text="@string/bonus_checkout" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvBonus"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/tvKeterangan"
+        android:text="@string/ketarangan_checkout" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lvBarang"
+        android:layout_alignParentEnd="true"
+        android:text="@string/checkout"
+        android:id="@+id/btnCheckout" />
+</RelativeLayout>

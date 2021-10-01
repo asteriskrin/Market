@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_add_24"
+        android:id="@+id/ivIcon"
+        android:contentDescription="@string/icon" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivIcon"
+        android:minHeight="48dp"
+        android:gravity="center_vertical"
+        android:id="@+id/tvNamaBarang"
+        android:text="@string/nama_barang" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivIcon"
+        android:layout_toEndOf="@id/tvNamaBarang"
+        android:minHeight="48dp"
+        android:id="@+id/etNamaBarang"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:hint="@string/ketik_nama_barang"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvNamaBarang"
+        android:minHeight="48dp"
+        android:gravity="center_vertical"
+        android:id="@+id/tvJumlahBarang"
+        android:text="@string/jumlah_barang" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etNamaBarang"
+        android:layout_toEndOf="@id/tvJumlahBarang"
+        android:minHeight="48dp"
+        android:id="@+id/etJumlahBarang"
+        android:inputType="numberDecimal"
+        android:importantForAutofill="no"
+        android:hint="@string/ketik_jumlah_barang"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvJumlahBarang"
+        android:minHeight="48dp"
+        android:gravity="center_vertical"
+        android:id="@+id/tvHargaBarang"
+        android:text="@string/harga_barang" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etJumlahBarang"
+        android:layout_toEndOf="@id/tvHargaBarang"
+        android:minHeight="48dp"
+        android:id="@+id/etHargaBarang"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:hint="@string/ketik_harga_barang" />
+</RelativeLayout>
